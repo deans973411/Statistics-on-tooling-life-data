@@ -1,0 +1,18 @@
+##Anaconda - A solution to manage various conduits in a vertical folder.
+#instruction: create export list remove update
+
+conda -V #check the version
+conda update conda
+
+conda env list #list all of environment
+conda create --name (NAME) python=(Version)
+activate (NAME)          #If on Windows ana
+source activate {NAME}   #If in Linux or MacOS
+conda list               #List plugin in env
+conda install (PLUGIN NAME)
+conda remove --name (NAME) (PLUGIN NAME)  #Remove plugins (PLUGIN NAME) in environment (NAME)
+conda env remove --name (NAME)            #Remvoe environment (NAME)
+
+deactivate               #Leave if on Windows ana
+source deactivate        #Leave if in Linux or MacOS
+
